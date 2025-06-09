@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <net.skyscanner.backpack.card.BpkCardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerStyle="large"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <net.skyscanner.backpack.text.BpkText
+                android:id="@+id/flight_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flight: SK123"
+                style="@style/bpkTextHeading1" />
+
+            <net.skyscanner.backpack.text.BpkText
+                android:id="@+id/departure_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Departure: DEL - 10:00 AM"
+                style="@style/bpkTextHeading4" />
+
+            <net.skyscanner.backpack.text.BpkText
+                android:id="@+id/arrival_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Arrival: BOM - 12:30 PM"
+                style="@style/bpkTextHeading4" />
+
+        </LinearLayout>
+
+    </net.skyscanner.backpack.card.BpkCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
